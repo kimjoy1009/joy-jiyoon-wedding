@@ -215,17 +215,9 @@
       return deceased ? `<span class="parent-names deceased">${name}</span>` : `<span class="parent-names">${name}</span>`;
     }
 
-    const parentsHTML = `
-  <p class="parent-line">
-    <span class="parent-group">${parentSpan(g.father, g.fatherDeceased)} · ${parentSpan(g.mother, g.motherDeceased)}</span>
-    <span class="parent-role">의 아들</span>
-    <span class="child-name">${g.name}</span>
-  </p>
-  <p class="parent-line">
-    <span class="parent-group">${parentSpan(b.father, b.fatherDeceased)} · ${parentSpan(b.mother, b.motherDeceased)}</span>
-    <span class="parent-role">의 딸</span>
-    <span class="child-name">${b.name}</span>
-  </p>
+  const parentsHTML = `
+  <p class="parent-line">${parentSpan(g.father, g.fatherDeceased)} · ${parentSpan(g.mother, g.motherDeceased)}의 아들 <span class="child-name">${g.name}</span></p>
+  <p class="parent-line">${parentSpan(b.father, b.fatherDeceased)} · ${parentSpan(b.mother, b.motherDeceased)}의  딸  <span class="child-name">${b.name}</span></p>
 `;
     $('#heroParents').innerHTML = parentsHTML;
 
