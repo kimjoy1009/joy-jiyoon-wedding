@@ -55,57 +55,48 @@
   <main class="main-container">
 
     <!-- ─── 첫번째 섹션: 메인 웨딩 사진 ─── -->
-    <section class="section section-hero">
-      <div class="hero-image-container">
-        <img src="" alt="웨딩 메인 사진" class="hero-image" id="heroImage">
-      </div>
-      <div class="hero-text">
-        <p class="wedding-date" id="heroDate"></p>
-        <h1 class="couple-names" id="heroNames"></h1>
-        <div class="parents-info" id="heroParents"></div>
-        <p class="venue" id="heroVenue"></p>
+<section class="section section-hero">
+  <div class="hero-image-container">
+    <img src="" alt="웨딩 메인 사진" class="hero-image" id="heroImage">
+  </div>
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
+</section>
 
-        <div class="countdown-container">
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-days">0</span>
-            <span class="countdown-label">일</span>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-hours">0</span>
-            <span class="countdown-label">시간</span>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-minutes">0</span>
-            <span class="countdown-label">분</span>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="countdown-item">
-            <span class="countdown-number" id="countdown-seconds">0</span>
-            <span class="countdown-label">초</span>
-          </div>
-        </div>
+<!-- ─── 2️⃣ 초대합니다 ─── -->
+<section class="section section-intro">
+  <div class="story-text">
+    <h2 id="storyTitle"></h2>
+    <p id="storyContent"></p>
+  </div>
+</section>
 
-        <div class="calendar-buttons">
-          <a href="#" class="calendar-btn google-cal" id="googleCalBtn" target="_blank" rel="noopener">구글 캘린더</a>
-          <button class="calendar-btn apple-cal" id="icsDownloadBtn">애플 캘린더</button>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <span></span>
-      </div>
-    </section>
+<!-- ─── 3️⃣ 부모님 이름 ─── -->
+<section class="section section-parents">
+  <div class="parents-info" id="heroParents"></div>
+</section>
 
-    <!-- ─── 두번째 섹션: 스토리 ─── -->
-    <section class="section section-story" id="storySection">
-      <div class="story-photos" id="storyPhotos"></div>
-      <div class="story-text">
-        <h2 id="storyTitle"></h2>
-        <p id="storyContent"></p>
-      </div>
-      <div class="story-photos story-photos-bottom" id="storyPhotosBottom"></div>
-    </section>
+<!-- ─── 4️⃣ 날짜 ─── -->
+<section class="section section-date">
+  <p class="wedding-date" id="heroDate"></p>
+</section>
+
+<!-- ─── 5️⃣ 이름 (선택) ─── -->
+<section class="section section-names">
+  <h1 class="couple-names" id="heroNames"></h1>
+</section>
+
+<!-- ─── 6️⃣ 장소 ─── -->
+<section class="section section-location">
+  <p class="venue" id="heroVenue"></p>
+</section>
+
+<!-- ─── 7️⃣ 기존 스토리 사진 (갤러리처럼 사용 가능) ─── -->
+<section class="section section-story" id="storySection">
+  <div class="story-photos" id="storyPhotos"></div>
+  <div class="story-photos story-photos-bottom" id="storyPhotosBottom"></div>
+</section>
     
   <!-- ─── 두번째 섹션: 날짜 ─── -->
    <section class="section section-hero">
