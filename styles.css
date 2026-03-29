@@ -242,7 +242,7 @@ a {
 }
 
 .parent-line {
-    font-size: 14px;
+    font-size: 15px;
     color: #555;
     margin: 5px 0;
     line-height: 1.6;
@@ -425,7 +425,7 @@ a {
 .story-text p {
     font-size: 15px;
     color: #555;
-    line-height: 2;
+    line-height: 1.5;
     white-space: pre-line;
 }
 
